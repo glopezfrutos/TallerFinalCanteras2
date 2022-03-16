@@ -10,23 +10,23 @@ import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "game")
-public class Game implements Serializable {
+@Table(name = "player")
+public class Player implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "game_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "player_id", nullable = false)
-    private Player player;
-//
-//    public Player getPlayer() {
-//        return player;
+    @Column(name = "email", nullable = false, length = 45)
+    private String email;
+
+//    public String getEmail() {
+//        return email;
 //    }
 //
-//    public void setPlayer(Player player) {
-//        this.player = player;
+//    public void setEmail(String email) {
+//        this.email = email;
 //    }
 //
 //    public Long getId() {

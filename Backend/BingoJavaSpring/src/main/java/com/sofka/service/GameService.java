@@ -11,12 +11,12 @@ import java.util.Optional;
 
 @Service
 public class GameService implements IGameService {
-    @Autowired // Para inyectar GameDao
+    @Autowired
     private GameDao gameDao;
 
     @Override
     @Transactional(readOnly = true)
-    public List<Game> list() {
+    public List<Game> listGame() {
         return (List<Game>) gameDao.findAll();
     }
 
@@ -29,6 +29,6 @@ public class GameService implements IGameService {
     @Override
     @Transactional(readOnly = true)
     public Optional<Game> findGame(Game game) {
-        return gameDao.findById(game.getGameId());
+        return gameDao.findById(game.getId());
     }
 }

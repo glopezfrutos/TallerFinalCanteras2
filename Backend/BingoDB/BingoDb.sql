@@ -1,6 +1,10 @@
 -- -----------------------------------------------------
 -- Schema VirtualBingoDB
 -- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema VirtualBingoDB
+-- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `VirtualBingoDB` DEFAULT CHARACTER SET utf8 ;
 USE `VirtualBingoDB` ;
 
@@ -9,8 +13,7 @@ USE `VirtualBingoDB` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `VirtualBingoDB`.`player` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `mongo_id` VARCHAR(45) NOT NULL,
-  `name` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `player_id_UNIQUE` (`id` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -37,10 +40,12 @@ ENGINE = InnoDB;
 -- Table `VirtualBingoDB`.`rolled_number`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `VirtualBingoDB`.`rolled_number` (
+  `rolled_number_id` INT NOT NULL AUTO_INCREMENT,
   `rolled_number` INT NOT NULL,
   `game_id` INT NOT NULL,
-  PRIMARY KEY (`rolled_number`, `game_id`),
   INDEX `fk_rolled_number_game1_idx` (`game_id` ASC) VISIBLE,
+  PRIMARY KEY (`rolled_number_id`),
+  UNIQUE INDEX `rolled_number_id_UNIQUE` (`rolled_number_id` ASC) VISIBLE,
   CONSTRAINT `fk_rolled_number_game1`
     FOREIGN KEY (`game_id`)
     REFERENCES `VirtualBingoDB`.`game` (`game_id`)
