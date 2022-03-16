@@ -1,6 +1,6 @@
-package com.sofkaTaller09.Bingo.service;
+package com.sofka.service;
 
-import com.sofkaTaller09.Bingo.domain.Game;
+import com.sofka.domain.Game;
 
 import java.util.List;
 import java.util.Optional;

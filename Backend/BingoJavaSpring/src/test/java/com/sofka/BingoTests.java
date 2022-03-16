@@ -1,10 +1,10 @@
-package com.sofkaTaller09.Bingo;
+package com.sofka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BingoApplicationTests {
+class BingoTests {
 
 	@Test
 	void contextLoads() {
