@@ -1,0 +1,94 @@
+##############################
+# BingoJavaSring
+##############################
+
+Backend/BingoJavaSpring/HELP.md
+Backend/BingoJavaSpring/target/
+Backend/BingoJavaSpring/!.mvn/wrapper/maven-wrapper.jar
+Backend/BingoJavaSpring/!**/src/main/**/target/
+Backend/BingoJavaSpring/!**/src/test/**/target/
+
+### STS ###
+Backend/BingoJavaSpring/.apt_generated
+Backend/BingoJavaSpring/.classpath
+Backend/BingoJavaSpring/.factorypath
+Backend/BingoJavaSpring/.project
+Backend/BingoJavaSpring/.settings
+Backend/BingoJavaSpring/.springBeans
+Backend/BingoJavaSpring/.sts4-cache
+
+### IntelliJ IDEA ###
+Backend/BingoJavaSpring/.idea
+Backend/BingoJavaSpring/*.iws
+Backend/BingoJavaSpring/*.iml
+Backend/BingoJavaSpring/*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+##############################
+# BingoLoginNodeJs
+##############################
+Backend/BingoLoginNodejs/node_modules
+Backend/BingoLoginNodeJs/shelf/
+Backend/BingoLoginNodeJs/workspace.xml
+Backend/BingoLoginNodeJs/httpRequests/
+
+
+
+##############################
+# BingoAngular
+##############################
+# See http:/help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+Frontend/BingoAngular/dist
+Frontend/BingoAngular/tmp
+Frontend/BingoAngular/out-tsc
+Frontend/BingoAngular/bazel-out
+
+# Node
+Frontend/BingoAngular/node_modules
+Frontend/BingoAngular/npm-debug.log
+Frontend/BingoAngular/yarn-error.log
+
+# IDEs and editors
+Frontend/BingoAngular/.idea/
+Frontend/BingoAngular/.project
+Frontend/BingoAngular/.classpath
+Frontend/BingoAngular/.c9/
+Frontend/BingoAngular/*.launch
+Frontend/BingoAngular/.settings/
+Frontend/BingoAngular/*.sublime-workspace
+
+# Visual Studio Code
+Frontend/BingoAngular/.vscode/*
+Frontend/BingoAngular/!.vscode/settings.json
+Frontend/BingoAngular/!.vscode/tasks.json
+Frontend/BingoAngular/!.vscode/launch.json
+Frontend/BingoAngular/!.vscode/extensions.json
+Frontend/BingoAngular/.history/*
+
+# Miscellaneous
+Frontend/BingoAngular/.angular/cache
+Frontend/BingoAngular/.sass-cache/
+Frontend/BingoAngular/connect.lock
+Frontend/BingoAngular/coverage
+Frontend/BingoAngular/libpeerconnection.log
+Frontend/BingoAngular/testem.log
+Frontend/BingoAngular/typings
+
+# System files
+Frontend/BingoAngular/.DS_Store
+Frontend/BingoAngular/Thumbs.db
