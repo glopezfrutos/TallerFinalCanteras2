@@ -29,6 +29,6 @@ public class GameService implements IGameService {
     @Override
     @Transactional(readOnly = true)
     public Optional<Game> findGame(Game game) {
-        return gameDao.findById(game.getId());
+        return gameDao.findById(game.getGameId());
     }
 }

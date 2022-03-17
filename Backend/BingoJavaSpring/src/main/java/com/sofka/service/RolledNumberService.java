@@ -1,4 +1,5 @@
 package com.sofka.service;
+import com.sofka.DTO.RolledNumberDTO;
 import com.sofka.dao.RolledNumberDao;
 import com.sofka.domain.RolledNumber;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +30,10 @@ public class RolledNumberService implements IRolledNumberService {
     @Transactional(readOnly = true)
     public Optional<RolledNumber> findRolledNumber(RolledNumber rolledNumber) {
         return rolledNumberDao.findById(rolledNumber.getRolledNumberId());
+    }
+
+    @Override
+    public List<RolledNumberDTO> rolledNumberByGame(Long gameId) {
+        return null;
     }
 }

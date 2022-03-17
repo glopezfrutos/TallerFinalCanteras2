@@ -1,12 +1,17 @@
 package com.sofka.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Column;
+import javax.persistence.ManyToOne;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
 import java.io.Serializable;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 
 @Data
 @Entity
@@ -15,8 +20,9 @@ public class Game implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "game_id", nullable = false)
-    private Long id;
+    private Long gameId;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "player_id", nullable = false)
     private Player player;

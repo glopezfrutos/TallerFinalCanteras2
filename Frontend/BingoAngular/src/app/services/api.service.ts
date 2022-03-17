@@ -14,6 +14,6 @@ export class ApiService {
   }
 
   getNumberList(): Observable<NumbersI[]> {
-    return this.http.get<NumbersI[]>(this.url + 'numbers');
+    return this.http.get<NumbersI[]>(this.url + 'rollednumber');
   }
 }

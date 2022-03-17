@@ -1,12 +1,13 @@
 package com.sofka.domain;
 
 import lombok.Data;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Column;
 import java.io.Serializable;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 
 @Data
 @Entity
