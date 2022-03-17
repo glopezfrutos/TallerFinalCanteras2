@@ -1,13 +1,10 @@
-
-<div class="card text-center">
+<div class="card text-center bg-light p-3">
   <h1 class="card-title">Números sorteados:</h1>
   <div class="card-body">
-<!--    <div class="container">-->
-      <div class="row row-cols-5">
-        <div class="col" *ngFor="let num of numbers">
+      <div class="row row-cols-3 row-cols-sm-3 row-cols-md-4">
+        <div class="col border p-2" *ngFor="let num of numbers">
           {{num.rolledNumber}}
         </div>
-<!--      </div>-->
     </div>
   </div>
 </div>
