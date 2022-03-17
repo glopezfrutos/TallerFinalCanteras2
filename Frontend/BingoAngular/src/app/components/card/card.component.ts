@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from "../../services/api.service";
 import {CardDetailInterface} from "../../models/card-detail-interface";
+import {NumbersComponent} from "../numbers/numbers.component"
 
 @Component({
   selector: 'app-card',
@@ -10,6 +11,7 @@ import {CardDetailInterface} from "../../models/card-detail-interface";
 export class CardComponent implements OnInit {
 
   cardNumbers: CardDetailInterface[] = [];
+  elseBlock: any;
 
   constructor(private api: ApiService) { }
 
@@ -19,5 +21,4 @@ export class CardComponent implements OnInit {
       this.cardNumbers = data;
     })
   }
-
 }

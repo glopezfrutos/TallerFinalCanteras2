@@ -20,4 +20,8 @@ export class NumbersComponent implements OnInit {
       this.numbers = data;
     })
   }
+
+  get rolledNumbers(){
+    return this.numbers
+  }
 }
