@@ -20,7 +20,7 @@ public class CardDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "card_detail_id", nullable = false)
-    private Integer id;
+    private Long id;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

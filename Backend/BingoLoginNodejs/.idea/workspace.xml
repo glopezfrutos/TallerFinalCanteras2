@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84668e68-b349-4c72-90c1-09119ea3f26d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/domain/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/domain/CardDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/domain/CardDetailId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/controller/CardDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/dao/CardDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/service/CardDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/service/ICardDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/models/card-detail-interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/domain/CardDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/domain/CardDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/service/RolledNumberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BingoJavaSpring/src/main/java/com/sofka/service/RolledNumberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/numbers/numbers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/numbers/numbers.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/models/numbersI.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/models/rolled-number-interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/services/api.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

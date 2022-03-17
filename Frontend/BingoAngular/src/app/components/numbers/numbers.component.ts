@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from "../../services/api.service";
-import {NumbersI} from "../../models/numbersI";
+import {RolledNumberInterface} from "../../models/rolled-number-interface";
 
 @Component({
   selector: 'app-numbers',
@@ -9,13 +9,12 @@ import {NumbersI} from "../../models/numbersI";
 })
 export class NumbersComponent implements OnInit {
 
-  numbers: NumbersI[] = [];
+  numbers: RolledNumberInterface[] = [];
 
   constructor(private api: ApiService) {
   }
 
-  ngOnInit():
-    void {
+  ngOnInit(): void {
     this.api.getNumberList().subscribe(data => {
       console.log(data);
       this.numbers = data;

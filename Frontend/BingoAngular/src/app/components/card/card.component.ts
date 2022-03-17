@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ApiService} from "../../services/api.service";
+import {CardDetailInterface} from "../../models/card-detail-interface";
 
 @Component({
   selector: 'app-card',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  cardNumbers: CardDetailInterface[] = [];
+
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+    this.api.getCardDetailList().subscribe(data => {
+      console.log(data);
+      this.cardNumbers = data;
+    })
   }
 
 }

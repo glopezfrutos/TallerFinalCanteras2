@@ -8,13 +8,13 @@
       <div class="col">O</div>
     </div>
   </div>
-  <div class="p-3 mb-2 text-dark">
-    <div class="row row-cols-5">
-      <div class="col"><button type="button" class="btn btn-secondary">B</button></div>
-      <div class="col"><button type="button" class="btn btn-secondary">I</button></div>
-      <div class="col"><button type="button" class="btn btn-secondary">N</button></div>
-      <div class="col"><button type="button" class="btn btn-secondary">G</button></div>
-      <div class="col"><button type="button" class="btn btn-secondary">O</button></div>
+  <div class="p-1 mb-2 text-dark">
+    <div class="row row-cols-5 p-1" *ngFor="let num of cardNumbers">
+      <div class="col"><button type="button" class="btn btn-secondary">{{num.b}}</button></div>
+      <div class="col"><button type="button" class="btn btn-secondary">{{num.i}}</button></div>
+      <div class="col"><button type="button" class="btn btn-secondary">{{num.n}}</button></div>
+      <div class="col"><button type="button" class="btn btn-secondary">{{num.g}}</button></div>
+      <div class="col"><button type="button" class="btn btn-secondary">{{num.o}}</button></div>
     </div>
   </div>
 </div>
