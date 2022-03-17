@@ -29,7 +29,7 @@ public class RolledNumberService implements IRolledNumberService {
     @Override
     @Transactional(readOnly = true)
     public Optional<RolledNumber> findRolledNumber(RolledNumber rolledNumber) {
-        return rolledNumberDao.findById(rolledNumber.getRolledNumberId());
+        return rolledNumberDao.findById(rolledNumber.getId());
     }
 
     @Override

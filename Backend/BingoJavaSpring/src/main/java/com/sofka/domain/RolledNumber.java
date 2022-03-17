@@ -20,37 +20,13 @@ public class RolledNumber implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "rolled_number_id", nullable = false)
-    private Long rolledNumberId;
-
-    @Column(name = "rolled_number", nullable = false)
-    private Integer rolledNumber;
+    private Long id;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "game_id", nullable = false)
-    private Game game;
+    @JoinColumn(name = "game_game_id", nullable = false)
+    private Game gameGame;
 
-//    public Game getGame() {
-//        return game;
-//    }
-//
-//    public void setGame(Game game) {
-//        this.game = game;
-//    }
-//
-//    public Integer getRolledNumber() {
-//        return rolledNumber;
-//    }
-//
-//    public void setRolledNumber(Integer rolledNumber) {
-//        this.rolledNumber = rolledNumber;
-//    }
-//
-//    public Long getId() {
-//        return rolledNumberId;
-//    }
-//
-//    public void setId(Long id) {
-//        this.rolledNumberId = id;
-//    }
+    @Column(name = "rolled_number")
+    private Integer rolledNumber;
 }

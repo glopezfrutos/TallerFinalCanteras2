@@ -15,12 +15,12 @@ import java.io.Serializable;
 
 @Data
 @Entity
-@Table(name = "game")
-public class Game implements Serializable {
+@Table(name = "card")
+public class Card implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "game_id", nullable = false)
-    private Long gameId;
+    @Column(name = "card_id", nullable = false)
+    private Integer id;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, optional = false)

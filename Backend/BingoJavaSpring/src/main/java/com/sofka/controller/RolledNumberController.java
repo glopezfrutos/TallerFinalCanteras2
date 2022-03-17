@@ -26,7 +26,7 @@ public class RolledNumberController {
         return rolledNumberService.listRolledNumber();
     }
 
-    @GetMapping(path = "/rollednumber/{rolledNumberId}")
+    @GetMapping(path = "/rollednumber/{id}")
     public Optional<RolledNumber> getRolledNumber(RolledNumber rolledNumber) {
         return rolledNumberService.findRolledNumber(rolledNumber);
     }
