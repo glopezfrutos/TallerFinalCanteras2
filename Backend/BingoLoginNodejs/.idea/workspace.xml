@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84668e68-b349-4c72-90c1-09119ea3f26d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/card/card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/numbers/numbers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Frontend/BingoAngular/src/app/components/numbers/numbers.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="84668e68-b349-4c72-90c1-09119ea3f26d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +40,7 @@
       <workItem from="1647386410379" duration="326000" />
       <workItem from="1647393773347" duration="1433000" />
       <workItem from="1647458843005" duration="593000" />
-      <workItem from="1647521446766" duration="741000" />
+      <workItem from="1647521446766" duration="755000" />
     </task>
     <servers />
   </component>
